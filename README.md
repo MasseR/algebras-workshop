@@ -14,7 +14,7 @@ There are three parts to the repository:
 │   └── semigroup.test.ts
 └── monoid
     ├── monoid.ts
-        └── monoid.test.ts
+    └── monoid.test.ts
 ```
 
 ## Magmas
