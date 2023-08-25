@@ -93,7 +93,7 @@ describe("Monoid tests", () => {
 
   // Have to artificially limit the range of integers because it's easy to
   // overflow with a list of integers
-  properties("product", monoid.productMonoid, fc.integer())
+  properties("product", monoid.productMonoid, fc.integer({min: -100, max: 100}))
   describe("The behavior of product", () => {
     it("should select the product of two values", () => {
       expect(monoid.productMonoid.add(2, 2)).toBe(4)
