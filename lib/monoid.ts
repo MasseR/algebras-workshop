@@ -103,6 +103,8 @@ export const maxMonoid: Monoid<null | number> = {
 // Object.entries({"foo": 1}) = [ ["foo", 1] ]
 // - The provided valueMapper is used to define how to compose the values
 // - See the documentation for `new Map()` and the class methods
+// - new Map(Object.entries(b)) creates a new Map from the contents of the b
+// record
 export function keyvalueMonoid<V>(valueMapper: Semigroup<V>): Monoid<Record<string | number | symbol, V>> {
   return {
     add: (a, b) => {
