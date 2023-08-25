@@ -43,5 +43,5 @@ Your task is to finish writing the monoid instances. Use whatever help you need,
 1. Clone the repository
 2. Nix users, open a nix shell `nix develop -c $SHELL`, others make sure node
    and npm are installed
-3. Run `npm install`
-4. Run `npx jest`
+3. Run `npm install` to install the dependencies
+4. Run `npx jest` to run the tests
